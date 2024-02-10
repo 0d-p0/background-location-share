@@ -1,0 +1,387 @@
+diff --git a/node_modules/@supersami/rn-foreground-service/android/.classpath b/node_modules/@supersami/rn-foreground-service/android/.classpath
+new file mode 100644
+index 0000000..bbe97e5
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/.classpath
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<classpath>
++	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/"/>
++	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
++	<classpathentry kind="output" path="bin/default"/>
++</classpath>
+diff --git a/node_modules/@supersami/rn-foreground-service/android/.project b/node_modules/@supersami/rn-foreground-service/android/.project
+new file mode 100644
+index 0000000..817b7ba
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/.project
+@@ -0,0 +1,34 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>supersami_rn-foreground-service</name>
++	<comment>Project supersami_rn-foreground-service created by Buildship.</comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++		<buildCommand>
++			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
++	</natures>
++	<filteredResources>
++		<filter>
++			<id>1707407542537</id>
++			<name></name>
++			<type>30</type>
++			<matcher>
++				<id>org.eclipse.core.resources.regexFilterMatcher</id>
++				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
++			</matcher>
++		</filter>
++	</filteredResources>
++</projectDescription>
+diff --git a/node_modules/@supersami/rn-foreground-service/android/.settings/org.eclipse.buildship.core.prefs b/node_modules/@supersami/rn-foreground-service/android/.settings/org.eclipse.buildship.core.prefs
+new file mode 100644
+index 0000000..68c9fab
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/.settings/org.eclipse.buildship.core.prefs
+@@ -0,0 +1,2 @@
++connection.project.dir=../../../../android
++eclipse.preferences.version=1
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/generated/source/buildConfig/debug/com/supersami/foregroundservice/BuildConfig.java b/node_modules/@supersami/rn-foreground-service/android/build/generated/source/buildConfig/debug/com/supersami/foregroundservice/BuildConfig.java
+new file mode 100644
+index 0000000..c379c5b
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/generated/source/buildConfig/debug/com/supersami/foregroundservice/BuildConfig.java
+@@ -0,0 +1,10 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package com.supersami.foregroundservice;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = Boolean.parseBoolean("true");
++  public static final String LIBRARY_PACKAGE_NAME = "com.supersami.foregroundservice";
++  public static final String BUILD_TYPE = "debug";
++}
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml
+new file mode 100644
+index 0000000..219f908
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.supersami.foregroundservice" >
++
++    <uses-sdk android:minSdkVersion="21" />
++
++    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
++    <uses-permission android:name="android.permission.WAKE_LOCK" />
++
++    <application>
++        <activity
++            android:name="com.supersami.foregroundservice.MainActivity"
++            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
++            android:exported="true"
++            android:launchMode="singleTask"
++            android:windowSoftInputMode="adjustResize" >
++            <intent-filter>
++                <action android:name="android.intent.action.MAIN" />
++            </intent-filter>
++        </activity>
++    </application>
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json
+new file mode 100644
+index 0000000..35dd02a
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "com.supersami.foregroundservice",
++  "variantName": "debug",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/aar_metadata/debug/aar-metadata.properties b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+new file mode 100644
+index 0000000..776557e
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+@@ -0,0 +1,5 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
++minCompileSdk=1
++minCompileSdkExtension=0
++minAndroidGradlePluginVersion=1.0.0
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/annotation_processor_list/debug/annotationProcessors.json b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/annotation_processor_list/debug/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/annotation_processor_list/debug/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/compile_r_class_jar/debug/R.jar b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/compile_r_class_jar/debug/R.jar
+new file mode 100644
+index 0000000..c910c60
+Binary files /dev/null and b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/compile_r_class_jar/debug/R.jar differ
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/compile_symbol_list/debug/R.txt b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/compile_symbol_list/debug/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+new file mode 100644
+index 0000000..246d8f1
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Thu Feb 08 21:26:09 IST 2024
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+new file mode 100644
+index 0000000..4e453a4
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\build\generated\res\resValues\debug"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/Constants.class b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/Constants.class
+new file mode 100644
+index 0000000..16c1d38
+Binary files /dev/null and b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/Constants.class differ
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundService$1.class b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundService$1.class
+new file mode 100644
+index 0000000..4757544
+Binary files /dev/null and b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundService$1.class differ
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundService$2.class b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundService$2.class
+new file mode 100644
+index 0000000..fad7b2c
+Binary files /dev/null and b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundService$2.class differ
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundService.class b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundService.class
+new file mode 100644
+index 0000000..2465893
+Binary files /dev/null and b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundService.class differ
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundServiceModule.class b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundServiceModule.class
+new file mode 100644
+index 0000000..fe106a9
+Binary files /dev/null and b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundServiceModule.class differ
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundServicePackage.class b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundServicePackage.class
+new file mode 100644
+index 0000000..2868d82
+Binary files /dev/null and b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundServicePackage.class differ
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundServiceTask.class b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundServiceTask.class
+new file mode 100644
+index 0000000..dcccf0d
+Binary files /dev/null and b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/ForegroundServiceTask.class differ
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/MainActivity.class b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/MainActivity.class
+new file mode 100644
+index 0000000..23a4e2d
+Binary files /dev/null and b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/MainActivity.class differ
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/NotificationConfig.class b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/NotificationConfig.class
+new file mode 100644
+index 0000000..62bff0f
+Binary files /dev/null and b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/javac/debug/classes/com/supersami/foregroundservice/NotificationConfig.class differ
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/local_only_symbol_list/debug/R-def.txt b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/local_only_symbol_list/debug/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/local_only_symbol_list/debug/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+new file mode 100644
+index 0000000..cbb9720
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+@@ -0,0 +1,37 @@
++1<?xml version="1.0" encoding="utf-8"?>
++2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++3    package="com.supersami.foregroundservice" >
++4
++5    <uses-sdk android:minSdkVersion="21" />
++6
++7    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
++7-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:5:5-77
++7-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:5:22-74
++8    <uses-permission android:name="android.permission.WAKE_LOCK" />
++8-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:6:5-68
++8-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:6:22-65
++9
++10    <application>
++10-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:7:9-19:23
++11        <activity
++11-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:9:9-18:20
++12            android:name="com.supersami.foregroundservice.MainActivity"
++12-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:10:13-41
++13            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
++13-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:12:13-83
++14            android:exported="true"
++14-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:14:14-37
++15            android:launchMode="singleTask"
++15-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:11:13-44
++16            android:windowSoftInputMode="adjustResize" >
++16-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:13:13-55
++17            <intent-filter>
++17-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:15:13-17:29
++18                <action android:name="android.intent.action.MAIN" />
++18-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:16:17-69
++18-->C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:16:25-66
++19            </intent-filter>
++20        </activity>
++21    </application>
++22
++23</manifest>
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml
+new file mode 100644
+index 0000000..219f908
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.supersami.foregroundservice" >
++
++    <uses-sdk android:minSdkVersion="21" />
++
++    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
++    <uses-permission android:name="android.permission.WAKE_LOCK" />
++
++    <application>
++        <activity
++            android:name="com.supersami.foregroundservice.MainActivity"
++            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
++            android:exported="true"
++            android:launchMode="singleTask"
++            android:windowSoftInputMode="adjustResize" >
++            <intent-filter>
++                <action android:name="android.intent.action.MAIN" />
++            </intent-filter>
++        </activity>
++    </application>
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/navigation_json/debug/navigation.json b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/navigation_json/debug/navigation.json
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/navigation_json/debug/navigation.json
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+new file mode 100644
+index 0000000..158fb7d
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+@@ -0,0 +1 @@
++com.supersami.foregroundservice
+diff --git a/node_modules/@supersami/rn-foreground-service/android/build/outputs/logs/manifest-merger-debug-report.txt b/node_modules/@supersami/rn-foreground-service/android/build/outputs/logs/manifest-merger-debug-report.txt
+new file mode 100644
+index 0000000..97952c6
+--- /dev/null
++++ b/node_modules/@supersami/rn-foreground-service/android/build/outputs/logs/manifest-merger-debug-report.txt
+@@ -0,0 +1,45 @@
++-- Merging decision tree log ---
++manifest
++ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:2:1-20:12
++INJECTED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:2:1-20:12
++	package
++		ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:3:11-52
++		INJECTED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml
++	xmlns:android
++		ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:2:11-69
++uses-permission#android.permission.FOREGROUND_SERVICE
++ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:5:5-77
++	android:name
++		ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:5:22-74
++uses-permission#android.permission.WAKE_LOCK
++ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:6:5-68
++	android:name
++		ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:6:22-65
++application
++ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:7:9-19:23
++activity#com.supersami.foregroundservice.MainActivity
++ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:9:9-18:20
++	android:launchMode
++		ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:11:13-44
++	android:windowSoftInputMode
++		ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:13:13-55
++	android:exported
++		ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:14:14-37
++	android:configChanges
++		ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:12:13-83
++	android:name
++		ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:10:13-41
++intent-filter#action:name:android.intent.action.MAIN
++ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:15:13-17:29
++action#android.intent.action.MAIN
++ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:16:17-69
++	android:name
++		ADDED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml:16:25-66
++uses-sdk
++INJECTED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml
++INJECTED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml
++	android:targetSdkVersion
++		INJECTED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml
++	android:minSdkVersion
++		INJECTED from C:\MY PROJECTS\REACT NATIVE\Company\MyTestApp\node_modules\@supersami\rn-foreground-service\android\src\main\AndroidManifest.xml
+diff --git a/node_modules/@supersami/rn-foreground-service/android/src/main/java/com/supersami/foregroundservice/ForegroundService.java b/node_modules/@supersami/rn-foreground-service/android/src/main/java/com/supersami/foregroundservice/ForegroundService.java
+index 31a2bd8..f11cc16 100644
+--- a/node_modules/@supersami/rn-foreground-service/android/src/main/java/com/supersami/foregroundservice/ForegroundService.java
++++ b/node_modules/@supersami/rn-foreground-service/android/src/main/java/com/supersami/foregroundservice/ForegroundService.java
+@@ -13,6 +13,8 @@ import com.facebook.react.HeadlessJsTaskService;
+ 
+ import static com.supersami.foregroundservice.Constants.NOTIFICATION_CONFIG;
+ import static com.supersami.foregroundservice.Constants.TASK_CONFIG;
++import com.facebook.react.R;
++
+ 
+ 
+ // NOTE: headless task will still block the UI so don't do heavy work, but this is also good
+diff --git a/node_modules/@supersami/rn-foreground-service/android/src/main/java/com/supersami/foregroundservice/NotificationHelper.java b/node_modules/@supersami/rn-foreground-service/android/src/main/java/com/supersami/foregroundservice/NotificationHelper.java
+index afccd04..a349c0d 100644
+--- a/node_modules/@supersami/rn-foreground-service/android/src/main/java/com/supersami/foregroundservice/NotificationHelper.java
++++ b/node_modules/@supersami/rn-foreground-service/android/src/main/java/com/supersami/foregroundservice/NotificationHelper.java
+@@ -141,11 +141,11 @@ class NotificationHelper {
+        
+ 
+         if(bundle.getBoolean("button", false) == true){
+-            notificationBuilder.addAction(R.drawable.redbox_top_border_background, bundle.getString("buttonText", "Button"), pendingBtnIntent);
++            notificationBuilder.addAction(com.facebook.react.R.drawable.redbox_top_border_background, bundle.getString("buttonText", "Button"), pendingBtnIntent);
+         }
+ 
+         if(bundle.getBoolean("button2", false) == true){
+-            notificationBuilder.addAction(R.drawable.redbox_top_border_background, bundle.getString("button2Text", "Button"), pendingBtn2Intent);
++            notificationBuilder.addAction(com.facebook.react.R.drawable.redbox_top_border_background, bundle.getString("button2Text", "Button"), pendingBtn2Intent);
+         }
+ 
+ 
